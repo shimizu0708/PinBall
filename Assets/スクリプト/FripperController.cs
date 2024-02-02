@@ -26,23 +26,23 @@ public class FripperController : MonoBehaviour
     void Update()
     {
 
-        //左矢印キーを押した時左フリッパーを動かす
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && tag == "LeftFripperTag")
+        //左矢印キー・Aキーを押した時左フリッパーを動かす
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && tag == "LeftFripperTag" || Input.GetKeyDown(KeyCode.A) && tag == "LeftFripperTag" || Input.GetKeyDown(KeyCode.S) && tag == "LeftFripperTag" || Input.GetKeyDown(KeyCode.DownArrow) && tag == "LeftFripperTag")
         {
             SetAngle(this.flickAngle);
         }
-        //右矢印キーを押した時右フリッパーを動かす
-        if (Input.GetKeyDown(KeyCode.RightArrow) && tag == "RightFripperTag")
+        //右矢印キー・Dキーを押した時右フリッパーを動かす
+        if (Input.GetKeyDown(KeyCode.RightArrow) && tag == "RightFripperTag" || Input.GetKeyDown(KeyCode.D) && tag == "RightFripperTag" || Input.GetKeyDown(KeyCode.S) && tag == "RightFripperTag" || Input.GetKeyDown(KeyCode.DownArrow) && tag == "RightFripperTag")
         {
             SetAngle(this.flickAngle);
         }
 
-        //矢印キー離された時フリッパーを元に戻す
-        if (Input.GetKeyUp(KeyCode.LeftArrow) && tag == "LeftFripperTag")
+        //矢印キー・ADキー離された時フリッパーを元に戻す
+        if (Input.GetKeyUp(KeyCode.LeftArrow) && tag == "LeftFripperTag" || Input.GetKeyUp(KeyCode.A) && tag == "LeftFripperTag" || Input.GetKeyUp(KeyCode.S) && tag == "LeftFripperTag" || Input.GetKeyUp(KeyCode.DownArrow) && tag == "LeftFripperTag")
         {
             SetAngle(this.defaultAngle);
         }
-        if (Input.GetKeyUp(KeyCode.RightArrow) && tag == "RightFripperTag")
+        if (Input.GetKeyUp(KeyCode.RightArrow) && tag == "RightFripperTag" || Input.GetKeyUp(KeyCode.D) && tag == "RightFripperTag" || Input.GetKeyUp(KeyCode.S) && tag == "RightFripperTag" || Input.GetKeyUp(KeyCode.DownArrow) && tag == "RightFripperTag")
         {
             SetAngle(this.defaultAngle);
         }

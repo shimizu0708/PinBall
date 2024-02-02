@@ -1091,6 +1091,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d5c0009802d45dd4789597f17020453c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d5c0009802d45dd4789597f17020453c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.4
       objectReference: {fileID: 0}
@@ -1560,6 +1564,7 @@ GameObject:
   - component: {fileID: 1441181738}
   - component: {fileID: 1441181737}
   - component: {fileID: 1441181742}
+  - component: {fileID: 1441181743}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -1692,6 +1697,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0611b35cf4820340a0adbdddbb3571e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1441181743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441181736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd16c998f4101244f9e0ab4ac265ff3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "\u8868\u793A\u5148\u30C6\u30AD\u30B9\u30C8\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8": {fileID: 1812232623}
 --- !u!1001 &1455863361
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2010,7 +2028,6 @@ GameObject:
   - component: {fileID: 1812232622}
   - component: {fileID: 1812232624}
   - component: {fileID: 1812232623}
-  - component: {fileID: 1812232625}
   m_Layer: 5
   m_Name: PointText
   m_TagString: Untagged
@@ -2034,8 +2051,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 380, y: 800}
-  m_SizeDelta: {x: 300, y: 200}
+  m_AnchoredPosition: {x: 340, y: 900}
+  m_SizeDelta: {x: 500, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1812232623
 MonoBehaviour:
@@ -2059,10 +2076,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 100
-    m_FontStyle: 1
+    m_FontSize: 70
+    m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 100
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2070,7 +2087,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 150
+  m_Text: insert Coin!!
 --- !u!222 &1812232624
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2079,18 +2096,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812232621}
   m_CullTransparentMesh: 1
---- !u!114 &1812232625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1812232621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f920acd399c1eb4aa2a8946a1474eb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2094597637
 PrefabInstance:
   m_ObjectHideFlags: 0
