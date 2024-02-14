@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FripperController : MonoBehaviour
@@ -46,6 +47,50 @@ public class FripperController : MonoBehaviour
         {
             SetAngle(this.defaultAngle);
         }
+
+        //スマホ画面のタッチ入力
+
+        if (Input.touchCount >0)
+        {
+            // タッチ情報の取得
+            Touch tap = Input.GetTouch(0);//☆☆☆この変数はどこに奥のが正解？☆☆☆
+            if (tap.position.x <= Screen.width / 2 && tag == "LeftFripperTag" )
+            {
+                SetAngle(this.flickAngle);
+            }
+            if (tap.position.x > Screen.width / 2 && tag == "RightFripperTag")
+            {
+                SetAngle(this.flickAngle);
+            }
+
+
+            if (tap.phase == TouchPhase.Ended)
+            {
+                SetAngle(this.defaultAngle);
+            }
+
+
+        }
+        if (Input.touchCount >1)
+        {
+            Touch tap1 = Input.GetTouch(1);//☆☆☆この変数はどこに奥のが正解？☆☆☆
+            if (tap1.position.x <= Screen.width / 2 && tag == "LeftFripperTag")
+            {
+                SetAngle(this.flickAngle);
+            }
+                if (tap1.position.x > Screen.width / 2 && tag == "RightFripperTag")
+            {
+                SetAngle(this.flickAngle);
+            }
+           
+ 
+            
+            if (tap1.phase == TouchPhase.Ended)
+            {
+                SetAngle(this.defaultAngle);
+            }
+        }
+        
     }
 
     //フリッパーの傾きを設定
