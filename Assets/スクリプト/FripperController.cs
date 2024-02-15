@@ -8,7 +8,7 @@ public class FripperController : MonoBehaviour
     //HingeJointƒRƒ“ƒ|[ƒlƒ“ƒg‚ğ“ü‚ê‚é
     private HingeJoint myHingeJoint;
 
-    //‰Šú‚ÌŒX‚«
+    //‰Šú‚ÌŒX‚«!
     private float defaultAngle = 20;
     //’e‚¢‚½‚ÌŒX‚«
     private float flickAngle = -20;
